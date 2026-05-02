@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <audio src="musica.mp3" id="musica" autoplay></audio>
+    <audio src="musica.mp3" id="musica" autoplay loop></audio>
     <div class="scroll-progress" id="scrollProgress"></div>
     <div class="noise-overlay"></div>
 
@@ -19,6 +19,9 @@
             <span class="logo-bracket">[</span>
             <span class="logo-name">Lúcio Henrique</span>
             <span class="logo-bracket">]</span>
+            <button onclick="toggleAudio()" id="btnAudio">
+  🔊
+</button>
         </div>
         <ul class="nav-links">
             <li><a href="#sobre" data-label="01">Sobre</a></li>
