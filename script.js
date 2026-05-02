@@ -1,5 +1,16 @@
 const audio = document.getElementById("musica");
 audio.volume = 0.2; // 
+const btn = document.getElementById("btnAudio");
+
+function toggleAudio() {
+  audio.muted = !audio.muted;
+
+  if (audio.muted) {
+    btn.textContent = "🔇";
+  } else {
+    btn.textContent = "🔊";
+  }
+}
 
 /* ── SCROLL PROGRESS ── */
 
