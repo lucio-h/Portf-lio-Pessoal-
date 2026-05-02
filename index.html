@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lúcio Henrique — Dev & Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio src="musica.mp3" id="musica" autoplay></audio>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="noise-overlay"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="logo-bracket">[</span>
+            <span class="logo-name">Lúcio Henrique</span>
+            <span class="logo-bracket">]</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#sobre" data-label="01">Sobre</a></li>
+            <li><a href="#trabalhos" data-label="02">Trabalhos</a></li>
+            <li><a href="#manifesto" data-label="03">Manifesto</a></li>
+            <li><a href="#contato" data-label="04">Contato</a></li>
+        </ul>
+        <a class="nav-cta magnetic" href="#contato">
+            <span>Fale comigo</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M1 13L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+        </a>
+        <button class="nav-burger" id="burger" aria-label="menu">
+            <span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="video-wrapper">
+            <video src="cenario.mp4" class="video-main" autoplay muted loop playsinline></video>
+            <div class="video-border-glow"></div>
+            <div class="video-scanline"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-tag">✦ Desenvolvedor &amp; Designer</p>
+            <h1 class="hero-title">
+                <span class="line">Criar é</span>
+                <span class="line accent glitch" data-text="transformar">transformar</span>
+                <span class="line">o mundo.</span>
+            </h1>
+            <p class="hero-sub">Interfaces que respiram. Experiências que ficam na memória.</p>
+            <div class="hero-actions">
+                <a href="#trabalhos" class="btn-primary magnetic">Ver trabalhos</a>
+                <a href="#sobre" class="btn-ghost">Sobre mim →</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-num" data-target="3">0</span>
+                <span class="stat-label">Projetos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num" data-target="7">0</span>
+                <span class="stat-label">Tecnologias</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-num" data-target="100">0</span>
+                <span class="stat-label">% Dedicação</span>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <span>HTML/CSS</span><span class="ticker-dot">✦</span>
+            <span>JavaScript</span><span class="ticker-dot">✦</span>
+            <span>React</span><span class="ticker-dot">✦</span>
+            <span>Node.js</span><span class="ticker-dot">✦</span>
+            <span>MySQL</span><span class="ticker-dot">✦</span>
+            <span>TypeScript</span><span class="ticker-dot">✦</span>
+            <span>Java</span><span class="ticker-dot">✦</span>
+            <span>UI Design</span><span class="ticker-dot">✦</span>
+            <span>UX Design</span><span class="ticker-dot">✦</span>
+            <span>HTML/CSS</span><span class="ticker-dot">✦</span>
+            <span>JavaScript</span><span class="ticker-dot">✦</span>
+            <span>React</span><span class="ticker-dot">✦</span>
+            <span>Node.js</span><span class="ticker-dot">✦</span>
+            <span>MySQL</span><span class="ticker-dot">✦</span>
+            <span>TypeScript</span><span class="ticker-dot">✦</span>
+            <span>Java</span><span class="ticker-dot">✦</span>
+            <span>UI Design</span><span class="ticker-dot">✦</span>
+            <span>UX Design</span><span class="ticker-dot">✦</span>
+        </div>
+    </div>
+
+    <!-- SOBRE -->
+    <section class="about" id="sobre">
+        <div class="about-video-bg">
+            <video src="cenario3.mp4" autoplay muted loop playsinline class="about-bg-video"></video>
+            <div class="about-video-overlay"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-label reveal">
+                <span class="section-index">// 01</span>
+                <span class="section-title-label">Sobre</span>
+                <div class="about-img-frame">
+                    <div class="about-img-inner">
+                        <img src="foto.png" alt="Lúcio Henrique" class="about-photo">
+                        <div class="about-img-lines">
+                            <div class="img-line-h"></div>
+                            <div class="img-line-v"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <h2>Olá, sou <em>Lúcio Henrique</em>.<br>Construo coisas para a web.</h2>
+                <p>Apaixonado por design de interfaces, animações e performance. Transformo ideias em produtos digitais com atenção obsessiva aos detalhes — cada pixel tem propósito, cada transição tem intenção.</p>
+                <p class="about-p2">Estou sempre explorando o limite entre o que é tecnicamente possível e o que é visualmente impactante.</p>
+                <div class="skills-row">
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Java</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRABALHOS -->
+    <section class="works" id="trabalhos">
+        <div class="works-header">
+            <span class="section-label">// 02 — Trabalhos</span>
+            <h2>Projetos <em>Selecionados</em></h2>
+        </div>
+        <div class="works-list">
+            <article class="work-item reveal" data-color="#ff9f5a">
+                <div class="work-number">01</div>
+                <div class="work-info">
+                    <h3>Dev-Notes</h3>
+                    <p>Organização de anotações &amp; desenvolvimento front-end</p>
+                </div>
+                <div class="work-tags"><span>HTML/CSS</span><span>JavaScript</span></div>
+                <a href="https://github.com/lucio-h/Dev-notes" target="_blank" class="work-link magnetic">↗</a>
+                <div class="work-hover-bg"></div>
+            </article>
+            <article class="work-item reveal" data-color="#7b5cff">
+                <div class="work-number">02</div>
+                <div class="work-info">
+                    <h3>Sobre mim</h3>
+                    <p>Colocando conhecimentos em prática &amp; website de apresentação</p>
+                </div>
+                <div class="work-tags"><span>HTML/CSS</span><span>JavaScript</span></div>
+                <a href="https://github.com/lucio-h/Sobre-mim" target="_blank" class="work-link magnetic">↗</a>
+                <div class="work-hover-bg"></div>
+            </article>
+            <article class="work-item reveal" data-color="#5affb0">
+                <div class="work-number">03</div>
+                <div class="work-info">
+                    <h3>WorldFit</h3>
+                    <p>Desenvolvimento de loja online com links de afiliado</p>
+                </div>
+                <div class="work-tags"><span>HTML/CSS</span><span>JavaScript</span></div>
+                <a href="https://github.com/lucio-h/Site-de-vendas---WorldFit" target="_blank" class="work-link magnetic">↗</a>
+                <div class="work-hover-bg"></div>
+            </article>
+        </div>
+        <div class="video2-wrapper reveal">
+            <video src="cenario2.mp4" class="video2" autoplay muted loop playsinline></video>
+            <div class="video2-caption">Em loop — inspiração constante</div>
+            <div class="video2-corner tl"></div>
+            <div class="video2-corner tr"></div>
+            <div class="video2-corner bl"></div>
+            <div class="video2-corner br"></div>
+        </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto" id="manifesto">
+        <div class="manifesto-video-wrap">
+            <video src="cenario4.mp4" autoplay muted loop playsinline class="manifesto-video"></video>
+            <div class="manifesto-overlay"></div>
+        </div>
+        <div class="manifesto-content reveal">
+            <span class="section-label">// 03 — Manifesto</span>
+            <blockquote class="manifesto-quote">
+                <span class="quote-line">Design não é</span>
+                <span class="quote-line accent">como parece.</span>
+                <span class="quote-line">É como funciona.</span>
+            </blockquote>
+            <p class="manifesto-author">— Steve Jobs</p>
+            <div class="manifesto-bar"></div>
+            <p class="manifesto-body">Acredito que cada detalhe importa. Cada decisão de design é também uma decisão de engenharia. Cada linha de código é também uma escolha estética.</p>
+        </div>
+        <div class="manifesto-side-text">DESIGN × CODE × CRAFT</div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+        <span class="section-label reveal">// 04 — Contato</span>
+        <h2 class="contact-title reveal">Vamos construir<br><em>algo juntos?</em></h2>
+        <a href="mailto:luciohrr2008@gmail.com" class="contact-email reveal magnetic">
+            luciohrr2008@gmail.com
+            <span class="email-arrow">→</span>
+        </a>
+        <div class="contact-socials reveal">
+            <a href="https://github.com/lucio-h" target="_blank" class="social-link">
+                <span class="social-num">01</span>GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/lúcio-h/" target="_blank" class="social-link">
+                <span class="social-num">02</span>LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span>© 2026 Lúcio Henrique</span>
+        <a href="#hero" class="footer-top">↑ Topo</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
